@@ -40,17 +40,17 @@ a {
 
 .header-lista a::after {
   content: "";
-  width: 100%;
+  width: 0;
   height: 2px;
-  bottom: 1px;
-  left: 1px;
+  bottom: 1.5px;
+  left: 0; 
   position: absolute;
-  background-color: transparent; 
-  transition: background-color 0.3s; 
-  animation: 3s;
+  background-color: black; 
+  transition: width 0.4s ease; 
 }
 
 .header-lista a:hover::after {
+  width: 100%;
   background-color: black; 
 }
 
@@ -61,4 +61,43 @@ a {
 .header-lista li:last-child img {
   padding-left: 2rem;
   max-width: 1.5rem;
+}
+@media screen and (max-width: 880px) {
+  .header-titulo {
+    font-size: 1.5rem; 
+    margin-left: 2rem; 
+  }
+  
+  .header-lista {
+    margin-right: 5rem;
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap;
+    align-items: flex-end; 
+  }
+
+  .header-lista li { 
+    margin-bottom: rem; 
+  }
+}
+@media screen and (max-width: 750px){
+  .header-menu {
+    background: white;
+    padding-bottom: 1rem;
+    display: flex;
+  }
+  .header-lista {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5rem;
+    margin-right: auto;
+    margin-top: 1rem;
+    position: relative;
+  }
+  
+  .header-lista li{
+    margin-top: 1rem;
+    display: flex;
+  }
+
 }
