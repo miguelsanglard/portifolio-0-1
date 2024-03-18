@@ -75,7 +75,6 @@ a {
     flex-wrap: wrap;
     align-items: flex-end; 
   }
-
   .header-lista li { 
     margin-bottom: rem; 
   }
@@ -94,7 +93,7 @@ a {
     margin-top: 1rem;
     position: relative;
   }
-  
+
   .header-lista li{
     margin-top: 1rem;
     display: flex;
